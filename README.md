@@ -4,8 +4,8 @@
 A modern, responsive, and interactive personal portfolio website showcasing expertise in Supply Chain Management, Inventory Control, and Data Analytics.
 
 ## 🚀 Live Demo
-View the live website here: [https://tariquemuhammad755.github.io/portfolio](https://tariquemuhammad755.github.io/portfolio)
-
+View the live website here: https://tariquemuhammad755.github.io/Portfolio/
+ 
 ## ✨ Key Features
 - **Neumorphic UI Design:** Soft-shadow aesthetic inspired by modern dashboard interfaces.
 - **Dynamic Highlights Loop:** Continuous vertical ticker highlighting key credentials and achievements.
