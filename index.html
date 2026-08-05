@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Personal portfolio of Muhammad Tarique — Supply Chain & Operations Specialist skilled in inventory control, logistics optimization, Power BI, and data analytics.">
+    <title>Muhammad Tarique | Supply Chain & Operations Coordinator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-body: #ecf0f3;
+            --bg-card: #ecf0f3;
+            --text-dark: #1e2125;
+            --text-muted: #3c3e41;
+            --text-light: #606870;
+            --accent-red: #ff014f;
+            --accent-red-glow: rgba(255, 1, 79, 0.15);
+            
+            /* Neumorphic Shadows */
+            --shadow-outset: 10px 10px 19px #1c1e220d, -10px -10px 19px #ffffff;
+            --shadow-card: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+            --shadow-inset: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;
+            --shadow-hover: 10px 10px 25px #c5d0e0, -10px -10px 25px #ffffff;
+            
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Fixed InBio Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(236, 240, 243, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 16px 0;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--shadow-card);
+            border: 2px solid #ffffff;
+        }
+
+        .brand-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: var(--text-dark);
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-red);
+        }
+
+        .btn-header-cta {
+            display: inline-block;
+            padding: 10px 22px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-red);
+            background: var(--bg-body);
+            border-radius: 6px;
+            box-shadow: var(--shadow-card);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+            color: #ffffff;
+            background-color: var(--accent-red);
+        }
+
+        /* Hero Layout - InBio Style */
+        .hero-section {
+            padding: 60px 0 80px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 280px 1.2fr 0.8fr;
+            gap: 32px;
+            align-items: center;
+        }
+
+        /* Left Highlights Motion Section (Neumorphic) */
+        .left-highlights-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--radius-lg);
+            padding: 24px 18px;
+        }
+
+        .highlights-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent-red);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlights-viewport {
+            height: 260px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .highlights-viewport::before,
+        .highlights-viewport::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 30px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .highlights-viewport::before {
+            top: 0;
+            background: linear-gradient(to bottom, var(--bg-body), rgba(236,240,243,0));
+        }
+        .highlights-viewport::after {
+            bottom: 0;
+            background: linear-gradient(to top, var(--bg-body), rgba(236,240,243,0));
+        }
+
+        .highlights-track {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            animation: verticalScroll 14s linear infinite;
+        }
+
+        .highlights-track:hover {
+            animation-play-state: paused;
+        }
+
+        .highlight-item {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: var(--transition);
+        }
+
+        .highlight-item:hover {
+            box-shadow: var(--shadow-inset);
+        }
+
+        .highlight-item i {
+            color: var(--accent-red);
+            font-size: 1rem;
+        }
+
+        .highlight-text-main {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .highlight-text-sub {
+            font-size: 0.7rem;
+            color: var(--text-light);
+        }
+
+        @keyframes verticalScroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+
+        /* Center Hero Content */
+        .hero-welcome-tag {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .hero-main-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+
+        .hero-main-title span {
+            color: var(--accent-red);
+        }
+
+        .hero-role-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+
+        .hero-role-title .highlight-text {
+            color: var(--accent-red);
+            border-right: 3px solid var(--accent-red);
+            padding-right: 4px;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        .hero-description {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 36px;
+            max-width: 520px;
+        }
+
+        /* Social & Skill Boxes (Neumorphic InBio Icons) */
+        .hero-bottom-widgets {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .widget-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 14px;
+        }
+
+        .icon-btn-group {
+            display: flex;
+            gap: 14px;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .icon-box:hover {
+            background: var(--accent-red);
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Right Side Profile Graphic Frame */
+        .hero-right-frame {
+            position: relative;
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--radius-lg);
+            padding: 16px;
+        }
+
+        .hero-right-frame::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+            width: 90%;
+            height: 80%;
+            background: linear-gradient(180deg, rgba(236,240,243,0) 0%, #e2e8f0 100%);
+            border-radius: var(--radius-lg);
+            z-index: 1;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: var(--radius-lg);
+            position: relative;
+            z-index: 2;
+            display: block;
+        }
+
+        /* Generic Section Headers & Subheads */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-subhead {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent-red);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        /* Skills Marquee */
+        .skills-marquee {
+            overflow: hidden;
+            width: 100%;
+            background: var(--bg-card);
+            box-shadow: var(--shadow-inset);
+            padding: 18px 0;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-flex;
+            gap: 40px;
+            animation: scroll 25s linear infinite;
+        }
+
+        .skill-item {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-item i {
+            color: var(--accent-red);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-img-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            padding: 16px;
+            border-radius: var(--radius-lg);
+        }
+
+        .about-img-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+        }
+
+        .about-text p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .skill-category-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            transition: var(--transition);
+        }
+
+        .skill-category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .skill-category-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-red);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            color: var(--text-dark);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .project-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: var(--text-dark);
+        }
+
+        .project-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* Info & Experience Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .cards-grid.two-col {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            padding: 28px;
+            border-radius: var(--radius-lg);
+            height: 100%;
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-role {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .card-org {
+            font-size: 0.85rem;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .card-date {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-bottom: 14px;
+        }
+
+        .card-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-list li {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .card-list li::before {
+            content: "•";
+            color: var(--accent-red);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Education Layout */
+        .education-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .education-item {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            padding: 24px 30px;
+            border-radius: var(--radius-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .edu-main {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .edu-sub {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .edu-grade {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            background: var(--accent-red-glow);
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        /* Certifications Grid */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .cert-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            padding: 24px;
+            border-radius: var(--radius-lg);
+        }
+
+        .cert-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .cert-issuer {
+            font-size: 0.82rem;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .cert-id {
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-light);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-inset);
+            border: none;
+            padding: 14px 18px;
+            border-radius: var(--radius-md);
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            outline: none;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .contact-info-card {
+            background: var(--bg-card);
+            box-shadow: var(--shadow-card);
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-item {
+            margin-bottom: 24px;
+        }
+
+        .info-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 6px;
+        }
+
+        .info-value {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Mobile Breakpoints */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-right-frame {
+                order: -1;
+                max-width: 380px;
+                margin: 0 auto;
+            }
+            .nav-links {
+                display: none;
+            }
+            .cards-grid, .skills-grid, .projects-grid, .cert-grid, .cards-grid.two-col {
+                grid-template-columns: 1fr;
+            }
+            .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-main-title {
+                font-size: 2.2rem;
+            }
+            .hero-bottom-widgets {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <img src="profile.jpg" alt="Muhammad Tarique" class="logo-img">
+                <span class="brand-name">TARIQUE</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#simulations">Simulations</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="resume.pdf" class="btn-header-cta" target="_blank" download>DOWNLOAD CV</a>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-grid">
+                
+                <!-- Left Highlights Motion Section -->
+                <div class="left-highlights-card">
+                    <div class="highlights-label">
+                        <i class="fa-solid fa-bolt"></i> Highlights
+                    </div>
+                    <div class="highlights-viewport">
+                        <div class="highlights-track">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <div class="highlight-text-main">8.9 CGPA</div>
+                                    <div class="highlight-text-sub">B.Tech Computer Science</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <div class="highlight-text-main">TCS iON Certified</div>
+                                    <div class="highlight-text-sub">Inventory Mgmt</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <div>
+                                    <div class="highlight-text-main">Goldman Sachs</div>
+                                    <div class="highlight-text-sub">Operations Simulation</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-trophy"></i>
+                                <div>
+                                    <div class="highlight-text-main">National Rank 60</div>
+                                    <div class="highlight-text-sub">ISFO Olympiad</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                                <div>
+                                    <div class="highlight-text-main">Saylor Academy</div>
+                                    <div class="highlight-text-sub">SCM Certification</div>
+                                </div>
+                            </div>
+
+                            <!-- Duplicate for continuous vertical loop -->
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <div class="highlight-text-main">8.9 CGPA</div>
+                                    <div class="highlight-text-sub">B.Tech Computer Science</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <div class="highlight-text-main">TCS iON Certified</div>
+                                    <div class="highlight-text-sub">Inventory Mgmt</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <div>
+                                    <div class="highlight-text-main">Goldman Sachs</div>
+                                    <div class="highlight-text-sub">Operations Simulation</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-trophy"></i>
+                                <div>
+                                    <div class="highlight-text-main">National Rank 60</div>
+                                    <div class="highlight-text-sub">ISFO Olympiad</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                                <div>
+                                    <div class="highlight-text-main">Saylor Academy</div>
+                                    <div class="highlight-text-sub">SCM Certification</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Content Section -->
+                <div>
+                    <div class="hero-welcome-tag">WELCOME TO MY PORTFOLIO</div>
+                    <h1 class="hero-main-title">Hi, I'm <span>Muhammad Tarique</span></h1>
+                    <div class="hero-role-title">a <span class="highlight-text">Supply Chain Specialist.</span></div>
+                    <p class="hero-description">Aspiring Professional seeking roles in the Supply Chain and Operations Domain. Focused on optimizing logistics, data-driven inventory control, and workflow efficiency.</p>
+                    
+                    <div class="hero-bottom-widgets">
+                        <div>
+                            <div class="widget-title">FIND WITH ME</div>
+                            <div class="icon-btn-group">
+                                <a href="https://www.linkedin.com/in/muhammad-tarique-b33b6a27a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="icon-box"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/tariquemuhammad755" target="_blank" class="icon-box"><i class="fa-brands fa-github"></i></a>
+                                <a href="mailto:tariquemuhammad755@gmail.com" class="icon-box"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="widget-title">BEST SKILL ON</div>
+                            <div class="icon-btn-group">
+                                <div class="icon-box"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                                <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                                <div class="icon-box"><i class="fa-solid fa-table"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Profile Graphic Frame -->
+                <div class="hero-right-frame">
+                    <img src="profile.jpg" alt="Muhammad Tarique Profile" class="hero-img">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Continuous Marquee -->
+    <div class="skills-marquee">
+        <div class="marquee-content">
+            <div class="skill-item"><i class="fa-solid fa-truck-ramp-box"></i> Supply Chain Management</div>
+            <div class="skill-item"><i class="fa-solid fa-boxes-packing"></i> Inventory Control</div>
+            <div class="skill-item"><i class="fa-solid fa-chart-pie"></i> Power BI & Tableau</div>
+            <div class="skill-item"><i class="fa-solid fa-table"></i> Advanced MS Excel</div>
+            <div class="skill-item"><i class="fa-solid fa-diagram-project"></i> Project Management</div>
+            <div class="skill-item"><i class="fa-brands fa-python"></i> Python Analytics</div>
+            <!-- Duplicate loop -->
+            <div class="skill-item"><i class="fa-solid fa-truck-ramp-box"></i> Supply Chain Management</div>
+            <div class="skill-item"><i class="fa-solid fa-boxes-packing"></i> Inventory Control</div>
+            <div class="skill-item"><i class="fa-solid fa-chart-pie"></i> Power BI & Tableau</div>
+            <div class="skill-item"><i class="fa-solid fa-table"></i> Advanced MS Excel</div>
+            <div class="skill-item"><i class="fa-solid fa-diagram-project"></i> Project Management</div>
+            <div class="skill-item"><i class="fa-brands fa-python"></i> Python Analytics</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header">
+                <span class="section-subhead">BIOGRAPHY</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-img-card">
+                    <img src="profile.jpg" alt="Muhammad Tarique">
+                </div>
+                <div class="about-text">
+                    <p>Data-driven B.Tech Computer Science graduate specializing in Supply Chain Operations, Inventory Control, and Process Management. Certified in TCS iON Inventory Management, Simplilearn SCM, CSCMP Warehousing, and MS Excel.</p>
+                    <p>Skilled in workflow tracking, vendor coordination, and visual reporting using Power BI and Tableau. Seeking a Supply Chain Coordinator or Operations Coordinator role to streamline daily operational workflows and logistics efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <span class="section-subhead">FEATURES</span>
+                <h2 class="section-title">What I Do</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category-card">
+                    <div class="skill-category-title"><i class="fa-solid fa-boxes-stacked"></i> Domain Knowledge</div>
+                    <div class="skill-tags">
+                        <span class="tag">Supply Chain Management</span>
+                        <span class="tag">Inventory Control</span>
+                        <span class="tag">Logistics Operations</span>
+                        <span class="tag">Risk Assessment</span>
+                        <span class="tag">Gantt Charts</span>
+                        <span class="tag">Critical Path Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-category-title"><i class="fa-solid fa-chart-column"></i> Data & Analytics</div>
+                    <div class="skill-tags">
+                        <span class="tag">MS Excel</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-category-title"><i class="fa-solid fa-users"></i> Soft Skills</div>
+                    <div class="skill-tags">
+                        <span class="tag">Cross-Functional Teamwork</span>
+                        <span class="tag">Operational Coordination</span>
+                        <span class="tag">Data-Driven Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <span class="section-subhead">PORTFOLIO</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div>
+                        <h3 class="project-title">Spam Detection Using Machine Learning</h3>
+                        <p class="project-desc">Developed a Machine Learning-based Spam Detection System for classifying text messages. Implemented TF-IDF for text feature extraction/vectorization and utilized Naive Bayes algorithm to improve prediction accuracy and detection performance.</p>
+                        <div class="skill-tags" style="margin-bottom: 20px;">
+                            <span class="tag">Python</span>
+                            <span class="tag">Naive Bayes</span>
+                            <span class="tag">TF-IDF</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3 class="project-title">Sentiment Analysis of Customer Reviews (NLP)</h3>
+                        <p class="project-desc">Built a sentiment analysis framework to classify customer feedback using NLP techniques. Applied TF-IDF feature extraction along with pre-trained BERT models to achieve improved prediction accuracy and identify customer sentiment trends.</p>
+                        <div class="skill-tags" style="margin-bottom: 20px;">
+                            <span class="tag">Python</span>
+                            <span class="tag">BERT</span>
+                            <span class="tag">TF-IDF</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <span class="section-subhead">CAREER</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="info-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <div class="card-role">Machine Learning Intern</div>
+                        <div class="card-org">Sipher Web</div>
+                    </div>
+                    <div class="card-date">05/2025 – 07/2025 | Remote</div>
+                </div>
+                <ul class="card-list" style="margin-top: 16px;">
+                    <li>Developed a Spam Detection System using Machine Learning techniques with TF-IDF for text feature extraction.</li>
+                    <li>Performed thorough data preprocessing, feature extraction, and model evaluation to improve overall prediction accuracy.</li>
+                    <li>Utilized Naive Bayes classification algorithm to effectively segment spam and non-spam communications.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Virtual Job Simulations Section -->
+        <section id="simulations">
+            <div class="section-header">
+                <span class="section-subhead">PRACTICE</span>
+                <h2 class="section-title">Virtual Job Simulations</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="card-role">Goldman Sachs</div>
+                    <div class="card-org">Operations Job Simulation</div>
+                    <div class="card-date">04/2026 | Forage</div>
+                    <ul class="card-list">
+                        <li>Personal Transaction and Financial Planning.</li>
+                        <li>Asset Management and Trade Fail Resolution workflow management.</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-role">CBRE</div>
+                    <div class="card-org">Project Management Job Simulation</div>
+                    <div class="card-date">03/2026 | Forage</div>
+                    <ul class="card-list">
+                        <li>Acted as Project Manager for a high-end kitchen appliances showroom build out.</li>
+                        <li>Reviewed project plans, identified potential risks/dependencies, and constructed Gantt charts using Critical Path Analysis.</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-role">Deloitte Australia</div>
+                    <div class="card-org">Data Analytics Job Simulation</div>
+                    <div class="card-date">Forage</div>
+                    <ul class="card-list">
+                        <li>Executed end-to-end data analysis workflows.</li>
+                        <li>Designed dynamic interactive data dashboards in Tableau and classified datasets via MS Excel.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="section-header">
+                <span class="section-subhead">QUALIFICATION</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-list">
+                <div class="education-item">
+                    <div>
+                        <div class="edu-main">B.Tech in Computer Science & Engineering</div>
+                        <div class="edu-sub">Integral University | Lucknow | 2026</div>
+                    </div>
+                    <div class="edu-grade">8.9 CGPA</div>
+                </div>
+
+                <div class="education-item">
+                    <div>
+                        <div class="edu-main">Diploma in Electronics Engineering</div>
+                        <div class="edu-sub">Aligarh Muslim University | Aligarh | 2023</div>
+                    </div>
+                    <div class="edu-grade">8.05 CPI</div>
+                </div>
+
+                <div class="education-item">
+                    <div>
+                        <div class="edu-main">High School</div>
+                        <div class="edu-sub">Prema Educational Academy | Menhdawal | 2020</div>
+                    </div>
+                    <div class="edu-grade">82.66 %</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="section-header">
+                <span class="section-subhead">CREDENTIALS</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-title">Operations & Supply Chain Management (BUS606)</div>
+                    <div class="cert-issuer">Saylor Academy (IACET Accredited)</div>
+                    <div class="cert-id">Credential ID: 7437186972MT</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-title">Supply Chain Foundations</div>
+                    <div class="cert-issuer">LinkedIn Learning (PMI Authorized)</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-title">Basics of Inventory Management</div>
+                    <div class="cert-issuer">TCS iON</div>
+                    <div class="cert-id">Certificate Of Participation</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-title">Supply Chain Management</div>
+                    <div class="cert-issuer">Simplilearn</div>
+                    <div class="cert-id">Credential ID: 10301012</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-title">MS-Excel (30 Days Crash Course)</div>
+                    <div class="cert-issuer">Learn More Pro</div>
+                    <div class="cert-id">Credential ID: SQ21T01</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-title">Power BI</div>
+                    <div class="cert-issuer">SkillCourse</div>
+                    <div class="cert-id">Credential ID: SC-015CB6EB71</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header">
+                <span class="section-subhead">CONTACT</span>
+                <h2 class="section-title">Contact With Me</h2>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-form" action="https://formspree.io/f/xvkppezn" method="POST">
+                    <div class="form-group">
+                        <label for="name">YOUR NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">YOUR MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Share your project requirements or message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-header-cta" style="border: none; cursor: pointer; text-align: center; width: 200px;">SEND MESSAGE</button>
+                </form>
+
+                <div class="contact-info-card">
+                    <div>
+                        <div class="info-item">
+                            <div class="info-label">EMAIL</div>
+                            <div class="info-value">tariquemuhammad755@gmail.com</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">LOCATION</div>
+                            <div class="info-value">Delhi, India</div>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" class="btn-header-cta" style="text-align: center;" target="_blank" download>DOWNLOAD CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="copyright">&copy; 2026 Muhammad Tarique. All rights reserved.</div>
+        </footer>
+    </div>
+
+</body>
+</html>
