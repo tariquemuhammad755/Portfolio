@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Meta Description -->
-    <meta name="description" content="Personal portfolio of Muhammad Tarique — Supply Chain & Operations Specialist skilled in inventory control, logistics optimization, Power BI, and data analytics.">
-    <title>Muhammad Tarique | Supply Chain & Operations Coordinator</title>
+    <meta name="description" content="Personal portfolio of Muhammad Tarique — Site Engineer specializing in ELV Systems, CCTV Surveillance, Access Control, and Project Management.">
+    <title>Muhammad Tarique | Site Engineer - ELV Systems</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,13 +101,13 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 24px;
+            gap: 20px;
             list-style: none;
         }
 
         .nav-links a {
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.78rem;
+            font-size: 0.72rem;
             font-weight: 600;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -276,7 +276,7 @@
 
         .hero-role-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--text-dark);
             margin-bottom: 20px;
@@ -524,15 +524,15 @@
         /* Projects Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
         }
 
         .project-card {
             background: var(--bg-card);
             box-shadow: var(--shadow-card);
             border-radius: var(--radius-lg);
-            padding: 32px;
+            padding: 28px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -546,17 +546,26 @@
 
         .project-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 700;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
             color: var(--text-dark);
         }
 
+        .project-subtitle {
+            font-size: 0.8rem;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
         .project-desc {
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            margin-bottom: 20px;
-            line-height: 1.7;
+            margin-bottom: 16px;
+            line-height: 1.6;
         }
 
         /* Info & Experience Cards Grid */
@@ -564,10 +573,6 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 28px;
-        }
-
-        .cards-grid.two-col {
-            grid-template-columns: repeat(2, 1fr);
         }
 
         .info-card {
@@ -667,7 +672,7 @@
         /* Certifications Grid */
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
         }
 
@@ -795,7 +800,7 @@
             .nav-links {
                 display: none;
             }
-            .cards-grid, .skills-grid, .projects-grid, .cert-grid, .cards-grid.two-col {
+            .cards-grid, .skills-grid, .projects-grid, .cert-grid {
                 grid-template-columns: 1fr;
             }
             .about-grid, .contact-grid {
@@ -848,6 +853,13 @@
                     <div class="highlights-viewport">
                         <div class="highlights-track">
                             <div class="highlight-item">
+                                <i class="fa-solid fa-video"></i>
+                                <div>
+                                    <div class="highlight-text-main">500 Cameras</div>
+                                    <div class="highlight-text-sub">GB Plant College, Tripura</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
                                 <i class="fa-solid fa-graduation-cap"></i>
                                 <div>
                                     <div class="highlight-text-main">8.9 CGPA</div>
@@ -855,36 +867,36 @@
                                 </div>
                             </div>
                             <div class="highlight-item">
-                                <i class="fa-solid fa-certificate"></i>
+                                <i class="fa-solid fa-briefcase"></i>
                                 <div>
-                                    <div class="highlight-text-main">TCS iON Certified</div>
-                                    <div class="highlight-text-sub">Inventory Mgmt</div>
+                                    <div class="highlight-text-main">SP Safe Control</div>
+                                    <div class="highlight-text-sub">Site Engineer - ELV Systems</div>
                                 </div>
                             </div>
                             <div class="highlight-item">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <i class="fa-solid fa-certificate"></i>
                                 <div>
-                                    <div class="highlight-text-main">Goldman Sachs</div>
-                                    <div class="highlight-text-sub">Operations Simulation</div>
+                                    <div class="highlight-text-main">CBRE Simulation</div>
+                                    <div class="highlight-text-sub">Project Management</div>
                                 </div>
                             </div>
                             <div class="highlight-item">
                                 <i class="fa-solid fa-trophy"></i>
                                 <div>
                                     <div class="highlight-text-main">National Rank 60</div>
-                                    <div class="highlight-text-sub">ISFO Olympiad</div>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fa-solid fa-truck-ramp-box"></i>
-                                <div>
-                                    <div class="highlight-text-main">Saylor Academy</div>
-                                    <div class="highlight-text-sub">SCM Certification</div>
+                                    <div class="highlight-text-sub">ISFO Math Olympiad</div>
                                 </div>
                             </div>
 
                             <!-- Duplicate for continuous vertical loop -->
                             <div class="highlight-item">
+                                <i class="fa-solid fa-video"></i>
+                                <div>
+                                    <div class="highlight-text-main">500 Cameras</div>
+                                    <div class="highlight-text-sub">GB Plant College, Tripura</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
                                 <i class="fa-solid fa-graduation-cap"></i>
                                 <div>
                                     <div class="highlight-text-main">8.9 CGPA</div>
@@ -892,31 +904,24 @@
                                 </div>
                             </div>
                             <div class="highlight-item">
-                                <i class="fa-solid fa-certificate"></i>
+                                <i class="fa-solid fa-briefcase"></i>
                                 <div>
-                                    <div class="highlight-text-main">TCS iON Certified</div>
-                                    <div class="highlight-text-sub">Inventory Mgmt</div>
+                                    <div class="highlight-text-main">SP Safe Control</div>
+                                    <div class="highlight-text-sub">Site Engineer - ELV Systems</div>
                                 </div>
                             </div>
                             <div class="highlight-item">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <i class="fa-solid fa-certificate"></i>
                                 <div>
-                                    <div class="highlight-text-main">Goldman Sachs</div>
-                                    <div class="highlight-text-sub">Operations Simulation</div>
+                                    <div class="highlight-text-main">CBRE Simulation</div>
+                                    <div class="highlight-text-sub">Project Management</div>
                                 </div>
                             </div>
                             <div class="highlight-item">
                                 <i class="fa-solid fa-trophy"></i>
                                 <div>
                                     <div class="highlight-text-main">National Rank 60</div>
-                                    <div class="highlight-text-sub">ISFO Olympiad</div>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fa-solid fa-truck-ramp-box"></i>
-                                <div>
-                                    <div class="highlight-text-main">Saylor Academy</div>
-                                    <div class="highlight-text-sub">SCM Certification</div>
+                                    <div class="highlight-text-sub">ISFO Math Olympiad</div>
                                 </div>
                             </div>
                         </div>
@@ -927,14 +932,14 @@
                 <div>
                     <div class="hero-welcome-tag">WELCOME TO MY PORTFOLIO</div>
                     <h1 class="hero-main-title">Hi, I'm <span>Muhammad Tarique</span></h1>
-                    <div class="hero-role-title">a <span class="highlight-text">Supply Chain Specialist.</span></div>
-                    <p class="hero-description">Aspiring Professional seeking roles in the Supply Chain and Operations Domain. Focused on optimizing logistics, data-driven inventory control, and workflow efficiency.</p>
+                    <div class="hero-role-title">a <span class="highlight-text">Site Engineer - ELV Systems.</span></div>
+                    <p class="hero-description">ELV Systems Site Engineer with hands-on experience in the installation, configuration, supervision, testing, and commissioning of CCTV Surveillance, Fire Alarm Systems, PTZ Cameras, Access Control Systems, Project Management, and ELV solutions.</p>
                     
                     <div class="hero-bottom-widgets">
                         <div>
                             <div class="widget-title">FIND WITH ME</div>
                             <div class="icon-btn-group">
-                                <a href="https://www.linkedin.com/in/muhammad-tarique-b33b6a27a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="icon-box"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/muhammad-tarique-b33b6a27a" target="_blank" class="icon-box"><i class="fa-brands fa-linkedin-in"></i></a>
                                 <a href="https://github.com/tariquemuhammad755" target="_blank" class="icon-box"><i class="fa-brands fa-github"></i></a>
                                 <a href="mailto:tariquemuhammad755@gmail.com" class="icon-box"><i class="fa-regular fa-envelope"></i></a>
                             </div>
@@ -942,9 +947,9 @@
                         <div>
                             <div class="widget-title">BEST SKILL ON</div>
                             <div class="icon-btn-group">
-                                <div class="icon-box"><i class="fa-solid fa-truck-ramp-box"></i></div>
-                                <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
-                                <div class="icon-box"><i class="fa-solid fa-table"></i></div>
+                                <div class="icon-box"><i class="fa-solid fa-video"></i></div>
+                                <div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+                                <div class="icon-box"><i class="fa-solid fa-diagram-project"></i></div>
                             </div>
                         </div>
                     </div>
@@ -962,19 +967,19 @@
     <!-- Skills Continuous Marquee -->
     <div class="skills-marquee">
         <div class="marquee-content">
-            <div class="skill-item"><i class="fa-solid fa-truck-ramp-box"></i> Supply Chain Management</div>
-            <div class="skill-item"><i class="fa-solid fa-boxes-packing"></i> Inventory Control</div>
-            <div class="skill-item"><i class="fa-solid fa-chart-pie"></i> Power BI & Tableau</div>
-            <div class="skill-item"><i class="fa-solid fa-table"></i> Advanced MS Excel</div>
-            <div class="skill-item"><i class="fa-solid fa-diagram-project"></i> Project Management</div>
-            <div class="skill-item"><i class="fa-brands fa-python"></i> Python Analytics</div>
+            <div class="skill-item"><i class="fa-solid fa-video"></i> CCTV Surveillance Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-camera"></i> IP CCTV & PTZ Cameras</div>
+            <div class="skill-item"><i class="fa-solid fa-id-card"></i> Access Control Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-bell"></i> Fire Alarm Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-bullhorn"></i> Public Address (PA) Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-screwdriver-wrench"></i> Testing & Commissioning</div>
             <!-- Duplicate loop -->
-            <div class="skill-item"><i class="fa-solid fa-truck-ramp-box"></i> Supply Chain Management</div>
-            <div class="skill-item"><i class="fa-solid fa-boxes-packing"></i> Inventory Control</div>
-            <div class="skill-item"><i class="fa-solid fa-chart-pie"></i> Power BI & Tableau</div>
-            <div class="skill-item"><i class="fa-solid fa-table"></i> Advanced MS Excel</div>
-            <div class="skill-item"><i class="fa-solid fa-diagram-project"></i> Project Management</div>
-            <div class="skill-item"><i class="fa-brands fa-python"></i> Python Analytics</div>
+            <div class="skill-item"><i class="fa-solid fa-video"></i> CCTV Surveillance Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-camera"></i> IP CCTV & PTZ Cameras</div>
+            <div class="skill-item"><i class="fa-solid fa-id-card"></i> Access Control Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-bell"></i> Fire Alarm Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-bullhorn"></i> Public Address (PA) Systems</div>
+            <div class="skill-item"><i class="fa-solid fa-screwdriver-wrench"></i> Testing & Commissioning</div>
         </div>
     </div>
 
@@ -991,8 +996,8 @@
                     <img src="profile.jpg" alt="Muhammad Tarique">
                 </div>
                 <div class="about-text">
-                    <p>Data-driven B.Tech Computer Science graduate specializing in Supply Chain Operations, Inventory Control, and Process Management. Certified in TCS iON Inventory Management, Simplilearn SCM, CSCMP Warehousing, and MS Excel.</p>
-                    <p>Skilled in workflow tracking, vendor coordination, and visual reporting using Power BI and Tableau. Seeking a Supply Chain Coordinator or Operations Coordinator role to streamline daily operational workflows and logistics efficiency.</p>
+                    <p>ELV Systems Site Engineer with hands-on experience in the installation, configuration, supervision, testing, and commissioning of CCTV Surveillance, Fire Alarm Systems, PTZ Cameras, Access Control Systems, Project Management, and ELV solutions. Currently working with SP Safe Control Systems Pvt. Ltd., New Delhi.</p>
+                    <p>Experienced in large-scale CCTV deployment, including the installation of 500 cameras at Khumulwng, Tripura, along with Access Control implementation at Xammer Pvt. Ltd. and PTZ camera installation and configuration at a CRPF Camp, Bawana. Strong understanding of site execution, team coordination, project planning, Gantt scheduling, risk management, vendor coordination, and supported by a CBRE Project Management Virtual Job Simulation through Forage.</p>
                 </div>
             </div>
         </section>
@@ -1005,31 +1010,44 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category-card">
-                    <div class="skill-category-title"><i class="fa-solid fa-boxes-stacked"></i> Domain Knowledge</div>
+                    <div class="skill-category-title"><i class="fa-solid fa-shield-halved"></i> ELV & Security Systems</div>
                     <div class="skill-tags">
-                        <span class="tag">Supply Chain Management</span>
-                        <span class="tag">Inventory Control</span>
-                        <span class="tag">Logistics Operations</span>
-                        <span class="tag">Risk Assessment</span>
-                        <span class="tag">Gantt Charts</span>
-                        <span class="tag">Critical Path Analysis</span>
+                        <span class="tag">CCTV Surveillance Systems</span>
+                        <span class="tag">IP CCTV</span>
+                        <span class="tag">PTZ Cameras</span>
+                        <span class="tag">Access Control Systems</span>
+                        <span class="tag">Fire Alarm Systems</span>
+                        <span class="tag">Public Address (PA) Systems</span>
+                        <span class="tag">ELV System Installation</span>
+                        <span class="tag">Testing & Commissioning</span>
                     </div>
                 </div>
                 <div class="skill-category-card">
-                    <div class="skill-category-title"><i class="fa-solid fa-chart-column"></i> Data & Analytics</div>
+                    <div class="skill-category-title"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Skills</div>
                     <div class="skill-tags">
-                        <span class="tag">MS Excel</span>
-                        <span class="tag">Power BI</span>
-                        <span class="tag">Tableau</span>
-                        <span class="tag">Python</span>
+                        <span class="tag">CCTV Camera Installation</span>
+                        <span class="tag">Camera Mounting & Positioning</span>
+                        <span class="tag">Camera Configuration</span>
+                        <span class="tag">Cabling & Connectivity</span>
+                        <span class="tag">PTZ Camera Configuration</span>
+                        <span class="tag">System Testing</span>
+                        <span class="tag">Fault Identification & Troubleshooting</span>
+                        <span class="tag">Surveillance System Deployment</span>
                     </div>
                 </div>
                 <div class="skill-category-card">
-                    <div class="skill-category-title"><i class="fa-solid fa-users"></i> Soft Skills</div>
+                    <div class="skill-category-title"><i class="fa-solid fa-diagram-project"></i> Site & Project Management</div>
                     <div class="skill-tags">
-                        <span class="tag">Cross-Functional Teamwork</span>
-                        <span class="tag">Operational Coordination</span>
-                        <span class="tag">Data-Driven Problem Solving</span>
+                        <span class="tag">Site Supervision</span>
+                        <span class="tag">Installation Team Coordination</span>
+                        <span class="tag">Project Execution</span>
+                        <span class="tag">Project Planning</span>
+                        <span class="tag">Gantt Chart Development</span>
+                        <span class="tag">Task Scheduling</span>
+                        <span class="tag">Risk Management</span>
+                        <span class="tag">Vendor/Supplier Coordination</span>
+                        <span class="tag">Effort & Cost Tracking</span>
+                        <span class="tag">Site Progress Monitoring</span>
                     </div>
                 </div>
             </div>
@@ -1039,35 +1057,49 @@
         <section id="projects">
             <div class="section-header">
                 <span class="section-subhead">PORTFOLIO</span>
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title">Projects & Technical Experience</h2>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div>
-                        <h3 class="project-title">Spam Detection Using Machine Learning</h3>
-                        <p class="project-desc">Developed a Machine Learning-based Spam Detection System for classifying text messages. Implemented TF-IDF for text feature extraction/vectorization and utilized Naive Bayes algorithm to improve prediction accuracy and detection performance.</p>
+                        <h3 class="project-title">CCTV Surveillance System</h3>
+                        <div class="project-subtitle">Khumulwng Park, Tripura (Site Engineer)</div>
+                        <p class="project-desc">Supervised the installation and deployment of 500 CCTV cameras across the project site. Coordinated installation teams, camera mounting, positioning, cabling, connectivity, configuration, testing, and commissioning.</p>
                         <div class="skill-tags" style="margin-bottom: 20px;">
-                            <span class="tag">Python</span>
-                            <span class="tag">Naive Bayes</span>
-                            <span class="tag">TF-IDF</span>
-                            <span class="tag">NLP</span>
+                            <span class="tag">500 Cameras</span>
+                            <span class="tag">CCTV Deployment</span>
+                            <span class="tag">Site Supervision</span>
                         </div>
                     </div>
-                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View Project</a>
+                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View GitHub</a>
                 </div>
 
                 <div class="project-card">
                     <div>
-                        <h3 class="project-title">Sentiment Analysis of Customer Reviews (NLP)</h3>
-                        <p class="project-desc">Built a sentiment analysis framework to classify customer feedback using NLP techniques. Applied TF-IDF feature extraction along with pre-trained BERT models to achieve improved prediction accuracy and identify customer sentiment trends.</p>
+                        <h3 class="project-title">Access Control System</h3>
+                        <div class="project-subtitle">Xammer Pvt. Ltd. (Site Engineer)</div>
+                        <p class="project-desc">Worked on the installation and implementation of Access Control Systems. Assisted with device installation, wiring, configuration, testing, commissioning, troubleshooting, and site coordination during system deployment.</p>
                         <div class="skill-tags" style="margin-bottom: 20px;">
-                            <span class="tag">Python</span>
-                            <span class="tag">BERT</span>
-                            <span class="tag">TF-IDF</span>
-                            <span class="tag">NLP</span>
+                            <span class="tag">Access Control</span>
+                            <span class="tag">Wiring & Config</span>
+                            <span class="tag">Commissioning</span>
                         </div>
                     </div>
-                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View Project</a>
+                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3 class="project-title">PTZ Camera Installation</h3>
+                        <div class="project-subtitle">CRPF Camp, Bawana (Site Engineer)</div>
+                        <p class="project-desc">Worked on installation and configuration of PTZ surveillance cameras. Assisted with camera mounting, cabling, connectivity, configuration, testing, site-level troubleshooting, and commissioning.</p>
+                        <div class="skill-tags" style="margin-bottom: 20px;">
+                            <span class="tag">PTZ Cameras</span>
+                            <span class="tag">Troubleshooting</span>
+                            <span class="tag">Testing</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/tariquemuhammad755" target="_blank" class="btn-header-cta" style="align-self: flex-start;">View GitHub</a>
                 </div>
             </div>
         </section>
@@ -1081,15 +1113,18 @@
             <div class="info-card">
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
                     <div>
-                        <div class="card-role">Machine Learning Intern</div>
-                        <div class="card-org">Sipher Web</div>
+                        <div class="card-role">Site Engineer - ELV Systems</div>
+                        <div class="card-org">SP Safe Control Systems Pvt. Ltd., New Delhi</div>
                     </div>
-                    <div class="card-date">05/2025 – 07/2025 | Remote</div>
+                    <div class="card-date">05/2026 – Present | Tripura</div>
                 </div>
                 <ul class="card-list" style="margin-top: 16px;">
-                    <li>Developed a Spam Detection System using Machine Learning techniques with TF-IDF for text feature extraction.</li>
-                    <li>Performed thorough data preprocessing, feature extraction, and model evaluation to improve overall prediction accuracy.</li>
-                    <li>Utilized Naive Bayes classification algorithm to effectively segment spam and non-spam communications.</li>
+                    <li>Supervise and coordinate ELV and security system installation activities at project sites.</li>
+                    <li>Lead and coordinate technicians and installation teams to ensure timely project execution.</li>
+                    <li>Manage installation, testing, configuration, and commissioning of CCTV surveillance systems.</li>
+                    <li>Supervise large-scale CCTV deployment, including installation of 500 cameras at GB Plant College, Tripura.</li>
+                    <li>Coordinate camera positioning, cabling, mounting, equipment installation, and site-level troubleshooting.</li>
+                    <li>Monitor installation quality, site progress, vendor coordination, and resolve connectivity issues.</li>
                 </ul>
             </div>
         </section>
@@ -1100,34 +1135,18 @@
                 <span class="section-subhead">PRACTICE</span>
                 <h2 class="section-title">Virtual Job Simulations</h2>
             </div>
-            <div class="cards-grid">
+            <div class="cards-grid" style="grid-template-columns: 1fr;">
                 <div class="info-card">
-                    <div class="card-role">Goldman Sachs</div>
-                    <div class="card-org">Operations Job Simulation</div>
-                    <div class="card-date">04/2026 | Forage</div>
-                    <ul class="card-list">
-                        <li>Personal Transaction and Financial Planning.</li>
-                        <li>Asset Management and Trade Fail Resolution workflow management.</li>
-                    </ul>
-                </div>
-
-                <div class="info-card">
-                    <div class="card-role">CBRE</div>
-                    <div class="card-org">Project Management Job Simulation</div>
+                    <div class="card-role">CBRE - Project Management Job Simulation</div>
+                    <div class="card-org">Showroom Project - Project Planning & Execution</div>
                     <div class="card-date">03/2026 | Forage</div>
                     <ul class="card-list">
-                        <li>Acted as Project Manager for a high-end kitchen appliances showroom build out.</li>
-                        <li>Reviewed project plans, identified potential risks/dependencies, and constructed Gantt charts using Critical Path Analysis.</li>
-                    </ul>
-                </div>
-
-                <div class="info-card">
-                    <div class="card-role">Deloitte Australia</div>
-                    <div class="card-org">Data Analytics Job Simulation</div>
-                    <div class="card-date">Forage</div>
-                    <ul class="card-list">
-                        <li>Executed end-to-end data analysis workflows.</li>
-                        <li>Designed dynamic interactive data dashboards in Tableau and classified datasets via MS Excel.</li>
+                        <li>Developed a structured project plan and Gantt chart covering project activities from conception through execution.</li>
+                        <li>Defined project scope and identified teams/stakeholders required for project execution.</li>
+                        <li>Prepared initial budget projections and incorporated effort and cost tracking into the project plan.</li>
+                        <li>Created a Risk Management Register to identify and manage potential project risks.</li>
+                        <li>Planned project activities including building permits, vendor/supplier start work, installation activities, and final punch-list creation.</li>
+                        <li>Applied project scheduling concepts including task dependencies, durations, milestones, and critical-path planning.</li>
                     </ul>
                 </div>
             </div>
@@ -1170,42 +1189,37 @@
         <section id="certifications">
             <div class="section-header">
                 <span class="section-subhead">CREDENTIALS</span>
-                <h2 class="section-title">Certifications</h2>
+                <h2 class="section-title">Certifications & Achievements</h2>
             </div>
             <div class="cert-grid">
                 <div class="cert-card">
-                    <div class="cert-title">Operations & Supply Chain Management (BUS606)</div>
-                    <div class="cert-issuer">Saylor Academy (IACET Accredited)</div>
-                    <div class="cert-id">Credential ID: 7437186972MT</div>
+                    <div class="cert-title">Cisco Networking Foundation Fundamentals</div>
+                    <div class="cert-issuer">LinkedIn Learning</div>
+                    <div class="cert-id">Credential ID: 9d0cf7fc</div>
                 </div>
 
                 <div class="cert-card">
-                    <div class="cert-title">Supply Chain Foundations</div>
-                    <div class="cert-issuer">LinkedIn Learning (PMI Authorized)</div>
+                    <div class="cert-title">IOT Foundations</div>
+                    <div class="cert-issuer">LinkedIn Learning</div>
+                    <div class="cert-id">Credential ID: ad969ee</div>
                 </div>
 
                 <div class="cert-card">
-                    <div class="cert-title">Basics of Inventory Management</div>
-                    <div class="cert-issuer">TCS iON</div>
-                    <div class="cert-id">Certificate Of Participation</div>
+                    <div class="cert-title">Recent Trends in Electronics</div>
+                    <div class="cert-issuer">Aligarh Muslim University</div>
+                    <div class="cert-id">Webinar Participation</div>
                 </div>
 
                 <div class="cert-card">
-                    <div class="cert-title">Supply Chain Management</div>
-                    <div class="cert-issuer">Simplilearn</div>
-                    <div class="cert-id">Credential ID: 10301012</div>
+                    <div class="cert-title">ISFO MATHS OLYMPIAD - Level 2 Qualified</div>
+                    <div class="cert-issuer">National Rank 60</div>
+                    <div class="cert-id">Year: 2020</div>
                 </div>
 
-                <div class="cert-card">
-                    <div class="cert-title">MS-Excel (30 Days Crash Course)</div>
-                    <div class="cert-issuer">Learn More Pro</div>
-                    <div class="cert-id">Credential ID: SQ21T01</div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-title">Power BI</div>
-                    <div class="cert-issuer">SkillCourse</div>
-                    <div class="cert-id">Credential ID: SC-015CB6EB71</div>
+                <div class="cert-card" style="grid-column: span 2;">
+                    <div class="cert-title">Buniyaad Talent Search - District Level</div>
+                    <div class="cert-issuer">Rank 2</div>
+                    <div class="cert-id">Year: 2018</div>
                 </div>
             </div>
         </section>
@@ -1240,8 +1254,12 @@
                             <div class="info-value">tariquemuhammad755@gmail.com</div>
                         </div>
                         <div class="info-item">
+                            <div class="info-label">PHONE</div>
+                            <div class="info-value">+91 9628058438</div>
+                        </div>
+                        <div class="info-item">
                             <div class="info-label">LOCATION</div>
-                            <div class="info-value">Delhi, India</div>
+                            <div class="info-value">Sant Kabir Nagar, India</div>
                         </div>
                     </div>
                     <a href="resume.pdf" class="btn-header-cta" style="text-align: center;" target="_blank" download>DOWNLOAD CV</a>
